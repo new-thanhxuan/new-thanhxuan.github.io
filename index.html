@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Văn Nghệ Việt Nam">
     <style>
+  body {
+    background-color: #000000;
+}
   img {
   width: 100%;
   height: auto;
-}
-  body {
-  background-image: url('https:/vannghe.github.io/Images/DuTuLe.png'); 
+  margin: 0 auto;
 }
   @font-face {
   src: url("/fonts/Platypi-Light.woff2") format("woff2");
@@ -30,13 +31,14 @@
     .font {
     font-size: 0.55rem
      }
-     body {
-  background-image: url('https:/vannghe.github.io/Images/DuTuLe-2.png'); 
-}
    }
     </style>
   </head>
-  <body bgcolor="#000000">
+  <body>
+    <picture>
+      <source media="(min-width: 40em)" srcset="Images/DuTuLe.png">
+      <img srcset="Images/DuTuLe-2.png">
+    </picture>
     <center>
       <p class="font color">Trang web này đang được thiết kế và xây dựng. Xin cám ơn quý vị đã chờ đợi.<br>
         Copyright &copy; 2025. Van Nghe Viet Nam.</p>
