@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Văn Nghệ Việt Nam">
     <style>
-  body {
-    background-color: #000000;
-}
   img {
   width: 100%;
   height: auto;
   margin: 0 auto;
+}
+  [role=banner] {
+  margin: auto;
+  text-align: center;
 }
   @font-face {
   src: url("/fonts/Platypi-Light.woff2") format("woff2");
@@ -20,9 +21,37 @@
   font-style: normal;
   font-weight: normal;
 }
+  @font-face {
+  src: url("/fonts/MJ GeometricSlab703BT-Medium.woff2") format("woff2");
+  font-family: "GeoSlab703 Medium";
+  font-style: normal;
+  font-weight: normal;
+}
+  @font-face {
+  src: url("/fonts/GeoSlab703 Md BT Bold.woff2") format("woff2");
+  font-family: "GeoSlab703 Bold";
+  font-style: normal;
+  font-weight: normal;
+}
+  .entry-title {
+  font-size: 3em;
+  font-family: "GeoSlab703 Bold";
+  font-weight: normal;
+  text-align: center;
+  line-height: 1;
+}
+  .text-content {
+  text-wrap: pretty;
+}
+  h1 {
+  font-size: 1.5em;
+}
+ p {
+  text-align: justify;
+}
   .font {
     font-family: "Platypi";
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .color {
     color: #d61c31;
@@ -35,13 +64,16 @@
     </style>
   </head>
   <body>
-    <picture>
-      <source media="(min-width: 40em)" srcset="Images/DuTuLe.png">
-      <img srcset="Images/DuTuLe-2.png">
-    </picture>
-    <center>
-      <p class="font color">Trang web này đang được thiết kế và xây dựng. Xin cám ơn quý vị đã chờ đợi.<br>
-        Copyright &copy; 2025. Van Nghe Viet Nam.</p>
-    </center>
+<header role="banner">
+  <a href="/">
+  <img src="VNVNlogo.svg" style="max-width:350px;" alt="Logo">
+  </a>
+</header>
+ <main>
+   <header>
+ <h1 class="entry-title">Ngày hội ngộ của các thế hệ họa sỹ</h1>
+ <p class="font color">Kỷ niệm 100 năm khai giảng khóa đầu tiên của Trường đại học Mỹ thuật Việt Nam, triển lãm “Dòng chảy” sẽ khai mạc ngày 4/8 tại Art Space (42 Yết Kiêu, Hà Nội). Đây là cuộc hội ngộ đặc biệt của 56 cựu sinh viên Khoa Sư phạm Mỹ thuật, giới thiệu 70 tác phẩm đặc sắc như những lời tri ân sâu sắc tới mái trường xưa. Cái tên “Dòng chảy” còn là ẩn dụ về mạch nguồn nghệ thuật xuyên suốt một thế kỷ, nơi những người trẻ năm nào nay đã là những nghệ sĩ, giảng viên, nhà nghiên cứu có tầm ảnh hưởng trong và ngoài nước. Mỗi tác phẩm trưng bày mang đậm dấu ấn cá nhân, phản ánh quá trình trưởng thành nghệ thuật và góc nhìn đa dạng về cuộc sống. Triển lãm kéo dài đến hết ngày 10/8/2025.</p>
+   </header>
+ </main>   
   </body>
 </html>
