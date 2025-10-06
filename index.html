@@ -1,25 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Homepage</title>
-<style>
-@font-face {
-  src: url("/fonts/DIN-Black.otf") format("opentype");
-  font-family: "DIN-Black";
+<html lang="en">
+  <head>
+  <title>Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+  <style>
+  @font-face {
+  src: url("fonts/BeVietnamPro-Regular.ttf");
+  font-family: "BeVietnamPro-Regular";
   font-style: normal;
-  font-weight: normal;
-}
-h1 {
-font-family: "DIN-Black";
-font-size:35pt;
-letter-spacing:-1.8pt;
-}
-</style>
-<body>
-<center>
-<div style="width:100%;height:250px;float:left;">&nbsp;</div>
-<h1>We<sup>,</sup>re temporarily undergoing maintenance.</h1>
-<div style="width:100%;height:250px;float:left;">&nbsp;</div>
-</center>
-</body>
-</html>
+  }
+  @font-face {
+  src: url("fonts/BeVietnamPro-SemiBold.ttf");
+  font-family: "BeVietnamPro-SemiBold";
+  font-style: normal;
+  }
+    .top {
+  background-color: #c4c4c4;
+  padding: 0.5rem 0 0.625rem;
+  }
+    .weather ul li {
+  font-size: 0.875rem;
+  font-family: "BeVietnamPro-Medium", sans-serif; 
+  }
+   @media (min-width: 40em) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px; 
+  } 
+   }
+   @media (min-width: 60em) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px; 
+  } 
+   }
+  </style>
+  </head>
+  <body>
+  <header class="top">
+  <div class="container">
+  Monday, Oct 06, 2025
+  </div>
+  <div>
+  <article class="weather">
+  <ul>
+  <li>
+  Hanoi
+  <span>
+    25<sup>o</sup>C
+  </span>
+  </li>
+  </ul>
+  </div>
+  </header>
+  </body>
+    
