@@ -6,8 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Thanh Xuan Media is a Vietnamese television broadcasting service headquartered in Thanh Xuan, Hanoi.">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-<body>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #fff;
+      font-family: "Be Vietnam Pro", sans-serif;
+    }
+   @font-face {
+  src: url("/fonts/BeVietnamPro-Regular.ttf") format("truetype");
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: normal;
+}
+   @font-face {
+  src: url("/fonts/BeVietnamPro-SemiBold.ttf") format("truetype");
+  font-family: "Be Vietnam Pro-Bold";
+  font-style: normal;
+  font-weight: normal;
+}
+  @font-face {
+  src: url("/fonts/DIN-Black.otf") format("opentype");
+  font-family: "DIN-Black";
+  font-style: normal;
+  font-weight: normal;
+}
+    .navbar {
+      background-color: #000;
+    }
 
+    .navbar-brand {
+      font-weight: bold;
+      color: #ffd700 !important;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 0;
+      background-color: #111;
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .btn-watch {
+	  font-family: "DIN-Black";
+      margin-top: 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+	  font-family: "Be Vietnam Pro-Bold";
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ffd700;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+	<img src="Images/Logo_Golden.png" width="130" alt="Logo">
+	  </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/vnvn/">VNVN</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Demographics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="mailto:lamtds09@gmail.com">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <img src="Images/Background.png" alt="Logo">
+      <div>
+        <button class="btn btn-watch">Watch now</button>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="about container">
+    <h2>About us</h2>
+    <p>Thanh Xuan Media is a Vietnamese television broadcast service headquartered in Thanh Xuan, Hanoi. We offer our viewers a diverse schedule of shows. 
+		Our program encompasses arts & culture news, documentaries, entertainment and educational TV shows in English and Vietnamese.</p>
+  </section>
+
+  <!-- Announcement Section -->
+  <section class="announcement container">
+    <h2>Announcement</h2>
+    <p>We are looking for a distributor to expand our coverage. <br>
+    Please contact us at <a href="mailto:lamtds09@gmail.com">lamtds09@gmail.com</a>.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright © 2025. Site designed and maintained by Thanh Xuan Media.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
