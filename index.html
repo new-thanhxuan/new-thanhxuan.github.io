@@ -33,16 +33,21 @@
     .navbar {
       background-color: #000;
     }
-
-    .navbar-brand {
-      font-weight: bold;
-      color: #ffd700 !important;
+    .nav-item {
+      padding: 1rem;
+    }
+    .nav-link {
+      color: #ffffff!important;
     }
 
     .hero {
-      text-align: center;
-      padding: 40px 0;
-      background-color: #111;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  bottom: 1%;
+  width: 100%;
+  left: 0;
+}
     }
 
     .hero img {
@@ -52,14 +57,13 @@
 
     .btn-watch {
 	  font-family: "DIN-Black";
-      margin-top: 20px;
-      background-color: #007bff;
+	  font-size: 18px;
+      background-color: #000000;
       color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 25px;
+      border: 1px;
+      padding: 0.3em;
     }
-
+	  
     section {
       padding: 40px 20px;
     }
@@ -72,20 +76,22 @@
 
     footer {
       background-color: #000;
-      color: #aaa;
+      color: #ffffff;
       text-align: center;
       padding: 20px 0;
       font-size: 0.9rem;
     }
 
     a {
-      color: #fff;
+	  color: #ffffff;
       text-decoration: none;
     }
-
     a:hover {
       color: #ffd700;
     }
+	a {
+  transition: all 0.5s ease;
+ }
   </style>
 </head>
 <body>
@@ -93,7 +99,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="/">
-	<img src="Images/Logo_Golden.png" width="130" alt="Logo">
+	<img src="Images/Logo_Golden.png" width="140" alt="Logo">
 	  </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -135,10 +141,11 @@
 
   <!-- Footer -->
   <footer>
-    <p>Copyright © 2025. Site designed and maintained by Thanh Xuan Media.</p>
+    <p>Copyright &copy; 2025. All rights reserved.<br>
+	Site designed and maintained by Thanh Xuan Media.</p>
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
