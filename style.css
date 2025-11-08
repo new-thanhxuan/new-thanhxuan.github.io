@@ -33,7 +33,7 @@
 	a {
   transition: all 0.5s ease;
  }
-border-bottom {
+.border-bottom {
  color: #f5cc02;
  height: 0.5px;
 }
