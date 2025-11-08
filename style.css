@@ -33,19 +33,18 @@ a {
  a {
   transition: all 0.5s ease;
  }
-.border-top-1 {
- color: #f5cc02;
- height: 8px;
-}
 .navbar-brand img {
   vertical-align: middle;
+}
+.logo {
+	margin: 1.125rem 0;
+	cursor: pointer;
 }
 .hero-section {
   background-color: #000;
   color: #fff;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
-
 footer {
   font-size: 0.95rem;
 }
