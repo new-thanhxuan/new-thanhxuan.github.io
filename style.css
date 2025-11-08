@@ -33,7 +33,10 @@
 	a {
   transition: all 0.5s ease;
  }
-
+border-bottom {
+ color: #f5cc02;
+ height: 0.5px;
+}
 .navbar-brand img {
   vertical-align: middle;
 }
