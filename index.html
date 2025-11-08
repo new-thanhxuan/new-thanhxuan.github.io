@@ -4,138 +4,88 @@
 	<title>Thanh Xuan Media</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thanh Xuan Media is a Vietnamese television broadcasting service headquartered in Thanh Xuan, Hanoi.">
+    <meta name="description" content="Thanh Xuan Media is a Vietnamese television network headquartered in Thanh Xuan, Hanoi. The network is designed to provide an excellent line-up with news, cultural, sports and wholesome entertainment programming.">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #0d0d0d;
-      color: #fff;
-      font-family: "Be Vietnam Pro", sans-serif;
-    }
-   @font-face {
-  src: url("/fonts/BeVietnamPro-Regular.ttf") format("truetype");
-  font-family: "Be Vietnam Pro";
-  font-style: normal;
-  font-weight: normal;
-}
-   @font-face {
-  src: url("/fonts/BeVietnamPro-SemiBold.ttf") format("truetype");
-  font-family: "Be Vietnam Pro-Bold";
-  font-style: normal;
-  font-weight: normal;
-}
-  @font-face {
-  src: url("/fonts/DIN-Black.otf") format("opentype");
-  font-family: "DIN-Black";
-  font-style: normal;
-  font-weight: normal;
-}
-    .navbar {
-      background-color: #000;
-    }
-    .nav-item {
-      padding: 0.5rem;
-    }
-    .nav-link {
-      color: #ffffff!important;
-    }
+	<link href="style.css" rel="stylesheet">
+  </head>
+<body class="bg-dark text-light">
 
-    .hero {
-  position: absolute;
-  justify-content: center;
-  display: flex;
-  bottom: 1%;
-  width: 100%;
-  left: 0;
-}
-    }
-
-    .hero img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .btn-watch {
-	  font-family: "DIN-Black";
-	  font-size: 18px;
-      background-color: #000000;
-      color: #fff;
-      border: 1px;
-      padding: 0.3em;
-    }
-	  
-    section {
-      padding: 40px 20px;
-    }
-
-    h2 {
-	  font-family: "Be Vietnam Pro-Bold";
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      background-color: #000;
-      color: #ffffff;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 0.9rem;
-    }
-
-    a {
-	  color: #ffffff;
-      text-decoration: none;
-    }
-    a:hover {
-      color: #ffd700;
-    }
-	a {
-  transition: all 0.5s ease;
- }
-  </style>
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-warning">
     <div class="container">
-      <a class="navbar-brand" href="/">
-	<img src="Images/Logo_Golden.png" width="140" alt="Logo">
-	  </a>
+      <a class="navbar-brand fw-bold text-warning" href="/">
+        <img src="Images/Logo_Golden.png" alt="Logo" height="35" class="me-2">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+		
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/vnvn/">VNVN</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Demographics</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Schedule</a></li>
-          <li class="nav-item"><a class="nav-link" href="mailto:lamtds09@gmail.com">Contact us</a></li>
+          <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="/vnvn/" class="nav-link">VNVN</a></li>
+          <li class="nav-item"><a href="/" class="nav-link">Schedule</a></li>
+          <li class="nav-item"><a href="mailto:lamtds09@gmail.com" class="nav-link">Contact us</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <header class="hero-section d-flex align-items-center text-center text-light" style="background: url('Background.png') center/cover no-repeat; height: 70vh;">
+    <div class="container">
+      <h1 class="display-4 fw-bold text-warning mb-3">Thanh Xuân Broadcasting Network</h1>
+      <p class="lead mb-4">Connecting community through arts, news, and entertainment.</p>
+      <a href="#" class="btn btn-outline-warning btn-lg">Watch now</a>
+    </div>
+  </header>
+
   <!-- About Section -->
-  <section class="about container">
-    <h2>About us</h2>
-    <p>Thanh Xuan Media is a Vietnamese television broadcast service headquartered in Thanh Xuan, Hanoi. We offer our viewers a diverse schedule of shows. 
-		Our program encompasses arts & culture news, documentaries, entertainment and educational TV shows in English and Vietnamese.</p>
+  <section class="py-5 bg-dark text-light">
+    <div class="container">
+      <h2 class="fw-bold mb-4">About us</h2>
+      <p>Thanh Xuan Media is a Vietnamese television network headquartered in Thanh Xuan, Hanoi. Founded in 2023, Thanh Xuan Media features a weekly telecast, 14 hours on Sunday. 
+       We offer a diverse schedule of shows, which is designed to appeal to all age groups and interests, ensuring the broadest possible audience.
+      Our programming includes arts & culture news, documentaries, entertainment and educational programs in English and Vietnamese. Viewers can enjoy the program from wherever they are.</p>
+    </div>
   </section>
 
-  <!-- Announcement Section -->
-  <section class="announcement container">
-    <h2>Announcement</h2>
-    <p>We are looking for a distributor to expand our coverage. <br>
-    Please contact us at <a href="mailto:lamtds09@gmail.com">lamtds09@gmail.com</a>.</p>
+  <section class="py-5 bg-black text-light border-top border-warning">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Programming highlights</h2>
+      <ul>
+        <li>Arts & Culture News - Produced and delivered by our staff.</li>
+        <li>Vietnamese and international movies.</li>
+        <li>General entertainment.</li>
+        <li>Exciting sports events from around the world.</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>Copyright &copy; 2025. All rights reserved.<br>
-	Site designed and maintained by Thanh Xuan Media.</p>
+  <footer class="bg-dark text-secondary py-4 border-top border-warning">
+    <div class="container d-md-flex justify-content-between align-items-start">
+      <div class="mb-3 mb-md-0">
+        <h5 class="text-warning fw-bold">ThanhXuân Broadcasting Network</h5>
+        <address class="mb-0">
+          85 Vu Trong Phụng, Thanh Xuan, Hanoi, Vietnam<br>
+          Phone: +84 348 158 801<br>
+          E-mail: <a href="mailto:lamtds09@gmail.com" class="text-light text-decoration-none">lamtds09@gmail.com</a>
+        </address>
+      </div>
+
+      <div>
+        <h6 class="fw-bold text-light">Community</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">News</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Demographics</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center small mt-3 text-secondary">
+      © 2025 Thanh Xuan Media. All rights reserved.
+    </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
