@@ -32,8 +32,8 @@
 }
 
 a {
-	  color: #ffffff;
-      text-decoration: none;
+	color: #ffffff;
+    text-decoration: none;
   }
  a:hover {
   color: #ffd700;
@@ -49,7 +49,7 @@ a {
 }
 .hero {
   background-color: #000;
-  margin-top: -1px;
+  margin-top: -4px;
 }
 
 .hero-image-container {
@@ -65,24 +65,26 @@ a {
   height: auto;
 }
 
-.hero-watch {  
+.hero-watch {
+  color: #000000;
   position: absolute;
   justify-content: center;
   bottom: 10%;
   width: 100%;
   left: 0;
   border-radius: 37px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5em;
 }
-
-
+.play-icon {
+  font-size: 18px;
+}
 .hero-btntext {
-  font-family: "DIN-Black";
+  font-family: "DIN-Black"; color: #ffffff;
   font-size: 26px;
   letter-spacing: -0.5px;
   left: 0;
   width: auto;
-  padding: 0.3rem;
+  padding: 5px 15px;
 }
 
 .about, .highlights {
@@ -121,10 +123,10 @@ a {
       </button>
       <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link text" href="/index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text" href="/vnvn/">VNVN</a></li>
-          <li class="nav-item"><a class="nav-link text" href="/">Schedule</a></li>
-          <li class="nav-item"><a class="nav-link text" href="mailto:lamtds09@gmail.com">Contact us</a></li>
+          <li class="nav-item px-sm-3"><a class="nav-link text" href="/index.html">Home</a></li>
+          <li class="nav-item px-sm-3"><a class="nav-link text" href="/vnvn/">VNVN</a></li>
+          <li class="nav-item px-sm-3"><a class="nav-link text" href="/">Schedule</a></li>
+          <li class="nav-item px-sm-3"><a class="nav-link text" href="mailto:lamtds09@gmail.com">Contact us</a></li>
         </ul>
       </nav>
     </div>
@@ -133,7 +135,10 @@ a {
     <div class="hero-image-container text-center">
       <img src="Images/Background.png" class="hero-image" loading="lazy" width="1140">
    <div class="hero-watch">
-    <a class="hero-btntext btn btn-light btn-lg" href="https://nekokokooo.github.io/jw/?url=https://160.22.122.156:9001/TXBN/index.m3u8">Watch now</a>
+    <a class="hero-btntext btn btn-light btn-lg" href="https://nekokokooo.github.io/jw/?url=https://160.22.122.156:9001/TXBN/index.m3u8">
+	<span class="play-icon">▶</span>
+    <span>Watch now</span>
+	</a>
       </div>
     </div>
   </section>
@@ -142,7 +147,7 @@ a {
     <p class="text">
       Thanh Xuan Media is a Vietnamese television network headquartered in Thanh Xuan, Hanoi. 
       Founded in 2023, Thanh Xuan Media features a weekly telecast, 14 hours on Sunday. 
-      We offer a diverse schedule of shows, designed to appeal to all age groups and interests, 
+      We offer a diverse schedule of shows, which is designed to appeal to all age groups and interests, 
       ensuring the broadest possible audience. Our programming includes arts &amp; culture news, documentaries, 
       entertainment and educational programs in English and Vietnamese. 
       Viewers can enjoy the program from wherever they are.
@@ -168,9 +173,9 @@ a {
       <div class="mt-4 mt-md-0">
         <h6 class="top">Community</h6>
         <ul class="list-unstyled mb-3">
-          <li><a href="/" class="text text-white text-decoration-none">News</a></li>
-          <li><a href="/" class="text text-white text-decoration-none">Demographics</a></li>
-          <li><a href="https://thanhxuan.hanoi.gov.vn/" class="text text-white text-decoration-none">Service</a></li>
+          <li><a href="/" class="text">News</a></li>
+          <li><a href="/" class="text">Demographics</a></li>
+          <li><a href="https://thanhxuan.hanoi.gov.vn/" class="text">Service</a></li>
         </ul>
       </div>
     </div>
