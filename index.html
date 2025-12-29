@@ -82,6 +82,9 @@ a {
   width: auto;
   padding: 5px 15px;
 }
+.content {
+ max-width: 1150px;
+}
 .navbar-toggler {
   border: none;
   outline: none;
@@ -132,7 +135,7 @@ a {
         <ul class="navbar-nav">
           <li class="nav-item px-sm-2"><a class="nav-link text" href="/">Homepage</a></li>
           <li class="nav-item px-sm-2"><a class="nav-link text" href="/vnvn/">VNVN</a></li>
-          <li class="nav-item px-sm-2"><a class="nav-link text" href="/schedule">Program Schedule</a></li>
+          <li class="nav-item px-sm-2"><a class="nav-link text" href="/live">Program Schedule</a></li>
           <li class="nav-item px-sm-2"><a class="nav-link text" href="mailto:lamtds09@gmail.com">Contact</a></li>
         </ul>
       </nav>
@@ -142,7 +145,7 @@ a {
     <div class="hero-image-container text-center">
       <img src="Images/Background.png" class="hero-image" loading="lazy">
    <div class="hero-watch">
-    <a class="hero-btntext" href="https://atv.asakura.fi/">
+    <a class="hero-btntext" href="/live">
     <span>
 	<img src="Images/Playbutton.svg" style="max-width: 18px;">
 	</span>
@@ -151,7 +154,7 @@ a {
       </div>
     </div>
   </section>
-  <section class="container py-5">
+  <section class="container py-5 content">
     <h2 class="mb-3"><b>About us</b></h2>
     <p>
       <b>Thanh Xuan Media</b> is the local Vietnamese television station headquartered in Hanoi. 
@@ -163,7 +166,7 @@ a {
 	  airing 4 hours every Sunday.
     </p>
   </section>
-  <section class="highlights container pb-5">
+  <section class="highlights container pb-5 content">
     <h2 class="mb-3"><b>Highlights</b></h2>
     <ul>
       <li>Arts &amp; Culture News - a glimpse into the Vietnamese culture and lifestyle.</li>
@@ -172,11 +175,11 @@ a {
       <li>Exciting sporting events from around the world.</li>
     </ul>
   </section>
-  <section class="container pb-5 text-center">
+  <section class="container pb-5 content text-center">
   <p>Click <b><a href="/index_vi">here</a></b> to view this page in Vietnamese.</p>
 </section>
-  <footer class="footer mt-auto py-4 text-white" style="background-color: #333333;">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start">
+  <footer class="footer mt-auto py-4 text-white" style="background-color: #333;">
+    <div class="container content d-flex flex-column flex-md-row justify-content-between align-items-start">
       <div>
         <img src="Images/Logo_White.svg" height="47" class="mb-3">
         <p class="mb-1">85 Vu Trong Phung<br>Thanh Xuan, Hanoi, Vietnam</p>
@@ -193,7 +196,7 @@ a {
       </div>
     </div>
       </footer>
-    <div class="text-center pb-4 py-3 small text-secondary" style="background-color: #1a1a1a;">
+    <div class="content text-center pb-4 py-3 small text-secondary" style="background-color: #1a1a1a;">
       <p>Copyright © 2025 Thanh Xuan Media. All rights reserved.</p>
     </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
