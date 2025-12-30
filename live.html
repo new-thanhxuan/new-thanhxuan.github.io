@@ -8,13 +8,10 @@
   <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
   <style>
     body {
-      transition: background-color 0.3s, color 0.3s;
-    }
-    body.dark-mode {
       background-color: #121212;
       color: #f1f1f1;
     }
-    .dark-mode .card {
+    .card {
       background-color: #1e1e1e;
       color: #f1f1f1;
     }
@@ -25,7 +22,7 @@
       padding: 10px;
       border-bottom: 1px solid #ddd;
     }
-    .dark-mode .schedule-item {
+    .schedule-item {
       border-bottom: 1px solid #333;
     }
     .schedule-time {
@@ -56,7 +53,7 @@
             preload="auto"
             data-setup='{}'
           >
-            <source src="http://160.22.122.156:9001/TXBN/index.m3u8" type="application/x-mpegURL">
+            <source src="http://160.22.122.248:9001/TXBN/index.m3u8" type="application/x-mpegURL">
           </video>
         </div>
       </div>
