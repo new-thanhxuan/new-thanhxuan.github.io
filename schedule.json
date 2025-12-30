@@ -1,0 +1,30 @@
+{
+  "channel": "TV 1",
+  "schedule": [
+    {
+      "time": "18:00",
+      "title": "TT1",
+      "current": true
+    },
+    {
+      "time": "18:30",
+      "title": "TT2",
+      "current": false
+    },
+    {
+      "time": "19:00",
+      "title": "T3",
+      "current": false
+    },
+    {
+      "time": "21:00",
+      "title": "4",
+      "current": false
+    },
+    {
+      "time": "22:30",
+      "title": "5",
+      "current": false
+    }
+  ]
+}
