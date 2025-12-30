@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thanh Xuan Media</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
+  <style>
+    body {
+      transition: background-color 0.3s, color 0.3s;
+    }
+    body.dark-mode {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+    .dark-mode .card {
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+    }
+    .video-container {
+      background-color: #000;
+    }
+    .schedule-item {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .dark-mode .schedule-item {
+      border-bottom: 1px solid #333;
+    }
+    .schedule-time {
+      font-weight: bold;
+      width: 80px;
+      display: inline-block;
+    }
+    .current {
+      background-color: rgba(13, 110, 253, 0.15);
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid py-3">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3>Live TV</h3>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-lg-8">
+      <div class="card">
+        <div class="video-container">
+          <video
+            id="livePlayer"
+            class="video-js vjs-fluid vjs-big-play-centered"
+            controls
+            autoplay
+            preload="auto"
+            data-setup='{}'
+          >
+            <source src="http://160.22.122.156:9001/TXBN/index.m3u8" type="application/x-mpegURL">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="card h-100">
+        <div class="card-header">
+          <strong>TV Schedule</strong>
+        </div>
+        <div id="schedule" class="list-group list-group-flush">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+
+<script>
+  fetch("schedule.json")
+    .then(response => response.json())
+    .then(data => {
+      const scheduleContainer = document.getElementById("schedule");
+
+      data.schedule.forEach(program => {
+        const item = document.createElement("div");
+        item.className = "schedule-item";
+        if (program.current) item.classList.add("current");
+
+        item.innerHTML = `
+          <span class="schedule-time">${program.time}</span>
+          ${program.title}
+        `;
+
+        scheduleContainer.appendChild(item);
+      });
+    })
+    .catch(err => {
+      console.error("No EPG available", err);
+    });
+</script>
+
+</body>
+</html>
