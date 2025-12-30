@@ -82,9 +82,6 @@ a {
   width: auto;
   padding: 5px 15px;
 }
-.content {
- max-width: 1150px;
-}
 .navbar-toggler {
   border: none;
   outline: none;
@@ -105,10 +102,10 @@ a {
   font-family: "Be Vietnam Pro";
   margin-top: 12px;
 }
-	
 @media (min-width: 992px) {
   .hero-image {
     width: 1140px;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -143,7 +140,7 @@ a {
   </header>
   <section class="hero">
     <div class="hero-image-container text-center">
-      <img src="Images/Background.png" class="hero-image" loading="lazy">
+      <img src="Images/Background.png" class="hero-image" loading="lazy" width="1140">
    <div class="hero-watch">
     <a class="hero-btntext" href="/live">
     <span>
@@ -154,7 +151,7 @@ a {
       </div>
     </div>
   </section>
-  <section class="container py-5 content">
+  <section class="container py-5">
     <h2 class="mb-3"><b>About us</b></h2>
     <p>
       <b>Thanh Xuan Media</b> is the local Vietnamese television station headquartered in Hanoi. 
@@ -162,11 +159,11 @@ a {
 	  We offer a diverse mix of shows dedicated to being responsive to all age groups and interests. 
 	  Our programming includes news, music, documentaries, entertainment and educational content 
 	  - all in Vietnamese. With a powerful distribution network, our mission is to preserve, promote the richness 
-	  of Vietnamese culture, and inspire you to explore the world. Thanh Xuan Media is only available via IPTV service, 
+	  of Vietnamese culture, and inspire you to explore the world. Thanh Xuan Media is only available via Internet, 
 	  airing 4 hours every Sunday.
     </p>
   </section>
-  <section class="highlights container pb-5 content">
+  <section class="highlights container pb-5">
     <h2 class="mb-3"><b>Highlights</b></h2>
     <ul>
       <li>Arts &amp; Culture News - a glimpse into the Vietnamese culture and lifestyle.</li>
@@ -178,8 +175,8 @@ a {
   <section class="container pb-5 content text-center">
   <p>Click <b><a href="/index_vi">here</a></b> to view this page in Vietnamese.</p>
 </section>
-  <footer class="footer mt-auto py-4 text-white" style="background-color: #333;">
-    <div class="container content d-flex flex-column flex-md-row justify-content-between align-items-start">
+  <footer class="footer mt-auto py-4 text-white" style="background-color: #333333;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start">
       <div>
         <img src="Images/Logo_White.svg" height="47" class="mb-3">
         <p class="mb-1">85 Vu Trong Phung<br>Thanh Xuan, Hanoi, Vietnam</p>
@@ -188,7 +185,7 @@ a {
       </div>
       <div class="mt-4 mt-md-0">
         <h5><b>Links</b></h5>
-        <ul class="list-unstyled mb-3">
+         <ul class="list-unstyled mb-3">
           <li class="footer-link"><a href="https://hanoi.gov.vn">Hanoi News Portal</a></li>
           <li class="footer-link"><a href="/">Demographics</a></li>
           <li class="footer-link"><a href="https://thanhxuan.hanoi.gov.vn/">Community Events</a></li>
@@ -196,9 +193,10 @@ a {
       </div>
     </div>
       </footer>
-    <div class="content text-center pb-4 py-3 small text-secondary" style="background-color: #1a1a1a;">
+    <div class="text-center pb-4 py-3 small text-secondary" style="background-color: #1a1a1a;">
       <p>Copyright © 2025 Thanh Xuan Media. All rights reserved.</p>
     </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
