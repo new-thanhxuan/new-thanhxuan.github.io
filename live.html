@@ -47,6 +47,17 @@
     .current {
       background-color: rgba(13, 110, 253, 0.15);
     }
+	.navbar-toggler {
+      border: none;
+      outline: none;
+    }
+	.footer {
+     border-top: 7px solid #fad105;
+    }
+    .footer-link {
+     font-family: "Be Vietnam Pro";
+     margin-top: 12px;
+    }
   </style>
 </head>
 <body>
@@ -70,7 +81,7 @@
       </nav>
     </div>
   </header>
-<div class="container-fluid py-3">
+<div class="container-fluid">
   <div class="d-flex justify-content-between align-items-center mb-3">
     <h3>Live TV</h3>
   </div>
@@ -86,7 +97,7 @@
             preload="auto"
             data-setup='{}'
           >
-            <source src="http://160.22.122.248:9001/TXBN/index.m3u8" type="application/x-mpegURL">
+            <source src="https://live.qphim.xyz/live/TXBN/index.m3u8" type="application/x-mpegURL">
           </video>
         </div>
       </div>
@@ -95,7 +106,7 @@
     <div class="col-lg-4">
       <div class="card h-100">
         <div class="card-header">
-          <strong>TV Schedule</strong>
+          <strong>Program Schedule</strong>
         </div>
         <div id="schedule" class="list-group list-group-flush">
         </div>
@@ -131,6 +142,26 @@
       console.error("No EPG available", err);
     });
 </script>
-
+ <footer class="footer mt-auto py-4 px-3 text-white" style="background-color: #333333;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start">
+      <div>
+        <img src="Images/Logo_White.svg" height="47" class="mb-3">
+        <p class="mb-1">85 Vu Trong Phung<br>Thanh Xuan, Hanoi, Vietnam</p>
+        <p class="mb-1">Phone: +84 348 158 801</p>
+        <p class="mb-0">E-mail: <a href="mailto:lamtds09@gmail.com" class="text-white">lamtds09@gmail.com</a></p>
+      </div>
+      <div class="mt-4 mt-md-0">
+        <h5><b>Links</b></h5>
+         <ul class="list-unstyled mb-3">
+          <li class="footer-link"><a href="https://hanoi.gov.vn">Hanoi News Portal</a></li>
+          <li class="footer-link"><a href="/">Demographics</a></li>
+          <li class="footer-link"><a href="https://thanhxuan.hanoi.gov.vn/">Community Events</a></li>
+        </ul>
+      </div>
+    </div>
+      </footer>
+    <div class="text-center pb-4 py-3 text-secondary" style="background-color: #1a1a1a;">
+      <p class="small">© 2025 Thanh Xuan Media. All rights reserved.</p>
+    </div>
 </body>
 </html>
